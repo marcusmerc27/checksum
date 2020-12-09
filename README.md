@@ -18,8 +18,8 @@ Write a Java program that computes a simple checksum.  This program is *based* u
 
 * Program name: checksum.java
 * Reads 10 non-negative integers from standard input (stdin), with each integer value in the range of 0..2^8-1 (I.e., 0..255).
+* Stores the 6th input integer into a variable called "checksum", and reset this input value to zero (0).
 * Stores the sum of the integers read from stdin into a variable called "sum".
-* Stores the 6th input integer into a variable called "checksum".
 * Perform integer division on this sum using 2^8 as the divisor to yield both a quotient and a remainder with these values stored in the variables "quotient" and "remainder", respectively.
 * Add the values of "quotient" and "remainder" together and store this value into the variable "sum".
 * Subtract this new value of "sum" from 2^8-1 and store the result in a variable called "complement".
@@ -85,7 +85,6 @@ $ javac checksum.java
 * This checksum value is stored in the 11th & 12th byte of the IPv4 header. This program assigns it location to the 6th byte.
 
 # Enhancements
-1. During the summation process, replace the 6th input integer with zero. You still need to place this 6th input integer into the variable "checksum".
 1. Modify the program and your test cases to use 32-bit integers (i.e., input numbers can now be (I.e., 0..64k, or 0..65535)
 1. Use the first input number to determine the number of integers to be read and store this value in the variable "count".  
   * The value of "count" is determined by the following java assignment `count = ((number >> 8) & 0x0F)*2;` where number is the first input number read.
