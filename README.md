@@ -24,7 +24,8 @@ Write a Java program that computes a simple checksum.  This program is *based* u
 * Add the values of "quotient" and "remainder" together and store this value into the variable "sum".
 * Subtract this new value of "sum" from 2^8-1 and store the result in a variable called "complement".
 * Output the value of "checksum" and "complement" to standard output (System.out).
-* If the value of "checksum" and "complement" are not the same, output the string "Error Detected!\n" to standard error (System.err).
+  * E.g., System.out.fprintf("Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
+* If the value of "checksum" and "complement" are not the same, output the string "Error Detected!" to standard error (System.err).
 
 # Starter code
 
@@ -44,9 +45,9 @@ public static void main(String args[]) {
 
   ....
   
-  System.out.printf("%d %d\n", checksum, complement);  
-  if (checksum != complement ) {
-     System.err.printf("Error Detected!");  
+System.out.fprintf("Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
+if (checksum != complement ) {
+     System.err.printf("Error Detected!\n");  
   }
   
 }
