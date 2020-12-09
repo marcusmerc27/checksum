@@ -20,11 +20,11 @@ Write a Java program that computes a simple checksum.  This program is *based* u
 * Reads 10 non-negative integers from standard input (stdin), with each integer value in the range of 0..2^8-1 (I.e., 0..255).
 * Stores the sum of the integers read from stdin into a variable called "sum".
 * Stores the 6th input integer into a variable called "checksum".
-* Perform integer division on this sum using 2^8 as the divisor to yield both a quotient and a remainder, with these values stored in the following variables respectively: "quotient" and "remainder".
-* Add the values of "quotient" and "remainder" together and store this value in a variable into "sum".
+* Perform integer division on this sum using 2^8 as the divisor to yield both a quotient and a remainder with these values stored in the variables "quotient" and "remainder", respectively.
+* Add the values of "quotient" and "remainder" together and store this value into the variable "sum".
 * Subtract this new value of "sum" from 2^8-1 and store the result in a variable called "complement".
-* Output the value of "checksum" and "complement" to standard output (stdout).
-* If the value of "checksum" and "complement" are not the same, output the string "Error Detected!\n" to standard error (stderr).
+* Output the value of "checksum" and "complement" to standard output (System.out).
+* If the value of "checksum" and "complement" are not the same, output the string "Error Detected!\n" to standard error (System.err).
 
 # Starter code
 
