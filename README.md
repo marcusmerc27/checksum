@@ -24,7 +24,7 @@ Write a Java program that computes a simple checksum of 8-bit integers.  This pr
 * Add the values of "quotient" and "remainder" together and store this value into the variable "sum".
 * Subtract this new value of "sum" from 2^8-1 and store the result in a variable called "complement".
 * Output the value of "checksum" and "complement" to standard output (System.out).
-* If the value of "checksum" and "complement" are not the same, output the string "Error Detected!" to standard error (System.err).
+* If the value of "checksum" and "complement" are not the same, output the string "Error Detected!" to standard error (stderr).
 
 # Starter code
 
