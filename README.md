@@ -4,7 +4,8 @@ COMP122 Pre-assessment Program: Generating a checksum value.
 ```
 check·sum | ˈCHekˌsəm |
 noun
-a digit representing the sum of the correct digits in a piece of stored or transmitted digital data, against which later comparisons can be made to detect errors in the data.
+a digit representing the sum of the correct digits in a piece of stored or transmitted 
+digital data, against which later comparisons can be made to detect errors in the data.
 ```
 
 
