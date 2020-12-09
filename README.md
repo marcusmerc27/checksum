@@ -26,7 +26,10 @@ Write a Java program that computes a simple checksum of 8-bit integers.  This pr
 * Output the value of "checksum" and "complement" to standard output (System.out).
 * If the value of "checksum" and "complement" are not the same, output the string "Error Detected!" to standard error (stderr).
 
-# Starter code
+## Minimum validation checks
+* Ensure that all input values are the correct range.  You may abort the program otherwise.
+
+## Starter code
 
 ```
 class checksum  
@@ -52,7 +55,7 @@ public static void main(String args[]) {
 }
 ```
 
-# Testing:
+## Testing:
 Use the following to test your program.
 
 ```
@@ -80,18 +83,18 @@ The file "47201.txt" is a correct test case for the enhanced program using 16-bi
 # Submission
 1. The source code of your program
 
+# Program Enhancements
+1. Modify the program and your test cases to use 16-bit integers (i.e., input numbers can now be (I.e., 0..64k, or 0..65535)
+1. Use the first input number to determine the number of integers to be read and store this value in the variable "count".  
+  * The value of "count" is determined by the following java assignment `count = ((number >> 8) & 0x0F)*2;` where number is the first input number read.
 
-## Minimum validation checks
-* Ensure that all input values are the correct range.  You may abort the program otherwise.
+# Other information and resources
+* https://en.wikipedia.org/wiki/IPv4
+* https://en.wikipedia.org/wiki/IPv4_header_checksum
 
 ## Notes:
 * The IPv4 header, without any options, has a total size of 20 bytes. This program reduces the size in half to a 10 byte size.
 * The IPv4 header utilizes a checksum field that is 16-bit quanity. This program reduces the size in half to a 8-bit quantity.
 * This checksum value is stored in the 11th & 12th byte of the IPv4 header. This program assigns it location to the 6th byte.
-
-# Enhancements
-1. Modify the program and your test cases to use 16-bit integers (i.e., input numbers can now be (I.e., 0..64k, or 0..65535)
-1. Use the first input number to determine the number of integers to be read and store this value in the variable "count".  
-  * The value of "count" is determined by the following java assignment `count = ((number >> 8) & 0x0F)*2;` where number is the first input number read.
 
 
