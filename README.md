@@ -29,27 +29,47 @@ Write a Java program that computes a simple checksum.  This program is *based* u
 # Starter code
 
 ```
-final integer max_int = 255;  // The maximum size for the input
-integer count = 10;           // The number of integers to read from stdin
-integer sum = 0;              // Note that the "sum" might exceed max_int
-integer checksum;             // The value of the 6th input integer
-integer quotient;             // The result of evaluating the assignment:  quotient   = sum / (max_int + 1);
-integer remainder;            // The result of evaluating the assignment:  remainder  = sum % (max_int + 1 );
-integer complement;           // The result of evaluationg the assignment: complement = max_int - sum;
+class checksum  
+{  
+
+  final integer max_int = 255;  // The maximum size for the input
+  integer count = 10;           // The number of integers to read from stdin
+  integer sum = 0;              // Note that the "sum" might exceed max_int
+  integer checksum;             // The value of the 6th input integer
+  integer quotient;             // The result of evaluating the assignment:  quotient   = sum / (max_int + 1);
+  integer remainder;            // The result of evaluating the assignment:  remainder  = sum % (max_int + 1 );
+  integer complement;           // The result of evaluationg the assignment: complement = max_int - sum;
+
+public static void main(String args[]) {
+
+  ....
+  
+  System.out.printf("%d %d\n", checksum, complement);  
+  if (checksum != complement ) {
+     System.err.printf("Error Detected!");  
+  }
+  
+}
 ```
 
 # Testing:
 Use the following to test your program.
 
 ```
-$ cat 2345.txt | checksum.java
+$ cat 2345.txt | java checksum
 2345
 Error Detected!
 ```
 ```
-$ cat 2345.txt | checksum.java
+$ cat 2345.txt | java checksum
 2345
 ```
+
+I presume that you have already compiled your program via the following command:
+```
+$ javac checksum.java
+```
+
 
 # Submission
 1. The source code of your program
