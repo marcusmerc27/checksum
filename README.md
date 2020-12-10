@@ -65,18 +65,18 @@ class checksum
 Use the following to test your program.
 
 ```
-$ cat 156.txt | java checksum
+$ java checksum < 156.txt
 Stored Checksum: 156, Computed Checksum: 156
 ```
 
 ```
-$ cat 229.txt | java checksum
+$ java checksum < 229.txt
 Stored Checksum: 229, Computed Checksum: 132
 Error Detected!
 ```
 
 ```
-$ cat 81.txt  | java checksum
+$ java checksum < 81.txt
 Stored Checksum: 81, Computed Checksum: 81
 ```
 
@@ -98,12 +98,12 @@ Now that you have a working program on the server, let's time and compare execut
 
 ```
 $ script checksum.typescript                 # Start and record a session, with the session recorded in the checksum.typescript file
-$ cat 156.txt | java checksum                # Run your checksum program
+$ java checksum < 156.txt                    # Run your checksum program
 $ pushd ~steve/comp122/checksum              # Temporarily change the working directory to utilize his version
-$ time ( cat 156.txt | java checksum )       # Time the execution of the professor's Java version
-$ time ( cat 156.txt | ./checksum )          # Time the execution of the professor's C version
+$ time java checksum < 156.txt               # Time the execution of the professor's Java version
+$ time ./checksum < 156.txt                  # Time the execution of the professor's C version
 $ popd                                       # Change the workind directory back
-$ time ( cat 156.txt | java checksum )       # Time the execution of your Java version
+$ time java checksum < 156.txt               # Time the execution of your Java version
 $ exit                                       # Exit the script program
 ```
 
