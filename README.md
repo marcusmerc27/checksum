@@ -42,7 +42,7 @@ class checksum
     final int max_int = 255;  // The maximum size for the input
     int count = 10;           // The number of integers to read from stdin
     int sum = 0;              // Note that the "sum" might exceed max_int
-    int checksum = 0;             // The value of the 6th input integer
+    int checksum = 0;         // The value of the 6th input integer
     int quotient;             // The result of evaluating the assignment:  quotient   = sum / (max_int + 1);
     int remainder;            // The result of evaluating the assignment:  remainder  = sum % (max_int + 1 );
     int complement;           // The result of evaluationg the assignment: complement = max_int - sum;
@@ -51,7 +51,6 @@ class checksum
 ```
 
 ```
- 
   System.out.fprintf("Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
   if (checksum != complement ) {
     System.err.printf("Error Detected!\n");  
@@ -79,10 +78,6 @@ $ cat 81.txt  | java checksum
 Stored Checksum: 81, Computed Checksum: 81
 ```
 
-I presume that you have already compiled your program via the following command:
-```
-$ javac checksum.java
-```
 The file "47201.txt" is a correct test case for the enhanced program using 16-bit integers.
 
 ### Timing the Program:
@@ -126,7 +121,7 @@ This program is based upon the structure if a IPv4 packet.  Although you do not 
 * https://en.wikipedia.org/wiki/IPv4_header_checksum
 
 ### Notes:
-* The IPv4 header utilizes a checksum field that is 16-bit quanity. This program reduces the size in half to a 8-bit quantity.  Correspondingly, the following changes are made to keep things consistent. 
+* The IPv4 header utilizes a checksum field that is 16-bit quanity. This program reduces the size in half to a 8-bit quantity.  Correspondingly, the following changes are made to keep things consistent: 
 * The IPv4 header, without any options, has a total size of 20 bytes. This program reduces the size in half to a 10 byte size.
 * This checksum value is stored in the 11th & 12th byte of the IPv4 header. This program assigns its location to the 6th byte.
 
