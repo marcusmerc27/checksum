@@ -14,17 +14,19 @@ This program is being assigned to start you programming right away in COMP 122. 
 
 
 # Assignment:
-Write a Java program that computes a simple checksum of 8-bit integers.  This program is *based* upon the calculation of the checksum value of a IPv4 header, defined by RFC791. This program should conform to the following specification:
+1. Write a Java program that computes a simple checksum of 8-bit integers.  This program is *based* upon the calculation of the checksum value of a IPv4 header, defined by RFC791. This program should conform to the following specification:
 
 * Program name: checksum.java
 * Reads 10 non-negative integers from standard input (stdin), with each integer value in the range of 0..2^8-1 (I.e., 0..255).
-* Stores the 6th input integer into a variable called "checksum", and reset this input value to zero (0).
+* Stores the 6th input integer into a variable called "checksum", and resets this input value to zero (0).
 * Stores the sum of the integers read from stdin into a variable called "sum".
-* Perform integer division on this sum using 2^8 as the divisor to yield both a quotient and a remainder with these values stored in the variables "quotient" and "remainder", respectively.
-* Add the values of "quotient" and "remainder" together and store this value into the variable "sum".
-* Subtract this new value of "sum" from 2^8-1 and store the result in a variable called "complement".
-* Output the value of "checksum" and "complement" to standard output (System.out).
-* If the value of "checksum" and "complement" are not the same, output the string "Error Detected!" to standard error (stderr).
+* Performs integer division on this sum using 2^8 as the divisor to yield both a quotient and a remainder. These values are then stored in the variables "quotient" and "remainder", respectively.
+* Adds the values of "quotient" and "remainder" together, and stores this value into the variable "sum".
+* Subtracts this new value of "sum" from 2^8-1, and stores the result in a variable called "complement".
+* Outputs the value of "checksum" and "complement" to standard output (System.out).
+* If the value of "checksum" and "complement" are not the same, outputs the string "Error Detected!" to standard error (stderr).
+
+1. Time the execution of your program, as well as two other programs provided by the professor.
 
 ### Minimum Validation Checks:
 * Ensure that all input values are the correct range.  You may abort the program otherwise.
