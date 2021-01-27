@@ -56,7 +56,7 @@ class checksum
 ```
 
 ```
-  System.out.fprintf("Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
+  System.out.printf("Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
   if (checksum != complement ) {
     System.err.printf("Error Detected!\n");  
   }
