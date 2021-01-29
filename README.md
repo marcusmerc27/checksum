@@ -101,7 +101,7 @@ Now that you have a working program on the server, let's time and compare execut
 
 ```
 $ script checksum.typescript                 # Start and record a session, with the session recorded in the checksum.typescript file
-$ java checksum < 156.txt                    # Run your checksum program
+$ time java checksum < 156.txt               # Run your checksum program, and time it
 $ pushd ~steve/comp122/checksum              # Temporarily change the working directory to utilize his version
 $ time java checksum < 156.txt               # Time the execution of the professor's Java version
 $ time ./checksum < 156.txt                  # Time the execution of the professor's C version
