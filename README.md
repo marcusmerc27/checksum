@@ -113,7 +113,7 @@ $ exit                                       # Exit the script program
 
 ### Submission:
 1. The checksum.java source code
-1. The checksum.script file
+1. The checksum.typescript file
 
 # Program Enhancements:
 1. Modify the program and your test cases to use 16-bit integers (i.e., input numbers can now be (I.e., 0..64k, or 0..65535)
