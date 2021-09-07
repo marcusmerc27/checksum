@@ -105,15 +105,41 @@ $ java checksum < 156.txt                    # Run your checksum program to make
 $ pushd ~steve/comp122/checksum              # Temporarily change the working directory to utilize his version
 $ time java checksum < 156.txt               # Time the execution of the professor's Java version
 $ time ./checksum < 156.txt                  # Time the execution of the professor's C version
-$ popd                                       # Change the workind directory back
+$ popd                                       # Change the working directory back
 $ time java checksum < 156.txt               # Time the execution of your Java version
 $ exit                                       # Exit the script program
 ```
 
 
 ### Submission:
+Use github classroom to accept and to submit your solution.
+
+Here are the steps you should follow:
+1. Make a directory for your labs:  mkdir -p ~/classes/comp122/labs
+1. Accept this assignment via GitHub Classroom
+   - A URL will be provided to you via slack
+   - Link you github account with you CSUN my.csun.edu
+1. Clone the assignment into the directory ~/classes/cit384/labs/getting-start
+1. Develop your Java program
+   - periodically push your solution to the repository
+
+#### Files to be added to the repository
+You need to add the following files to the repository
 1. The checksum.java source code
 1. The checksum.typescript file
+
+#### Git Commands to remember
+1. git clone: to create a local repository (and working directory) of your remote repository
+2. git pull: a command to perform a *fetch* and *merge* in one step 
+   - git fetch: to copy all new informtion from the remote repository into the local repository
+   - git merge: to merge all new information from the local repository into the working directory
+4. git add: to add a file to the staging area 
+5. git commit: to place all stage files into the local repository
+6. git push: to copy all new information from the local repository into the remote repository
+7. git status: provides a recap of your current working directory, staging, and branch information
+
+
+
 
 # Program Enhancements:
 1. Modify the program and your test cases to use 16-bit integers (i.e., input numbers can now be (I.e., 0..64k, or 0..65535)
