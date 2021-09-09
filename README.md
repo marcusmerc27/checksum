@@ -126,7 +126,7 @@ Here are the steps you should follow:
 #### Files to be added to the repository
 You need to add the following files to the repository
 1. The checksum.java source code
-1. The checksum.typescript file
+1. The checksum.script file
 
 #### Git Commands to remember
 1. git clone: to create a local repository (and working directory) of your remote repository
