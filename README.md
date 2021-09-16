@@ -50,7 +50,7 @@ class checksum
     int checksum = 0;         // The value of the 6th input integer
     int quotient;             // The result of evaluating the assignment:  quotient   = sum / (max_int + 1);
     int remainder;            // The result of evaluating the assignment:  remainder  = sum % (max_int + 1 );
-    int complement;           // The result of evaluationg the assignment: complement = max_int - sum;
+    int complement;           // The result of evaluating the assignment: complement = max_int - sum;
 
     Scanner stdin = new Scanner(System.in);
 ```
