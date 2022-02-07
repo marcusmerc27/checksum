@@ -115,11 +115,10 @@ $ exit                                       # Exit the script program
 Use github classroom to accept and to submit your solution.
 
 Here are the steps you should follow:
-1. Make a directory for your labs:  mkdir -p ~/classes/comp122/labs
+1. Make a directory for your labs:  mkdir -p ~/classes/comp122/deliverables
 1. Accept this assignment via GitHub Classroom
    - A URL will be provided to you via slack
-   - Link you github account with you CSUN my.csun.edu
-1. Clone the assignment into the directory ~/classes/cit384/labs/getting-start
+1. Clone the assignment into the directory ~/classes/comp122/deliverables
 1. Develop your Java program
    - periodically push your solution to the repository
 
