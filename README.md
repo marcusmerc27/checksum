@@ -139,14 +139,6 @@ You need to add the following files to the repository
 
 
 
-
-# Program Enhancements:
-1. Modify the program and your test cases to use 16-bit integers (i.e., input numbers can now be (I.e., 0..64k, or 0..65535)
-1. Use the first input number to determine the number of integers to be read and store this value in the variable "count".  
-  * The value of "count" is determined by the following java assignment `count = ((number >> 8) & 0x0F)*2;` where number is the first input number read.
-1. Name the enhanced program: checksum16.java
-1. Add the necessary additional files to the repository.
-
 # Other Information and Resources:
 This program is based upon the structure if a IPv4 packet.  Although you do not need to understand this structure to complete this assignment, you may want to review some of the material associated with IPv4.  More information will be provided in the lecture.
 * https://en.wikipedia.org/wiki/IPv4
