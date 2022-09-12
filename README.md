@@ -24,9 +24,9 @@ This program should conform to the following specification:
   * Reads 10 non-negative integers from standard input (stdin), with each integer value in the range of 0..2^8-1 (I.e., 0..255). 
   * Stores the 6th input integer into a variable called "checksum", and resets this input value to zero (0).
   * Stores the sum of the integers read from stdin into a variable called "sum".
-  * Performs integer division on this sum using 2^8 as the divisor to yield both a quotient and a remainder. These values are then stored in the variables "quotient" and "remainder", respectively.
+  * Performs integer division on this sum using 256 (2^8) as the divisor to yield both a quotient and a remainder. These values are then stored in the variables "quotient" and "remainder", respectively.
   * Adds the values of "quotient" and "remainder" together, and stores this value into the variable "sum".
-  * Subtracts this new value of "sum" from 2^8-1, and stores the result in a variable called "complement".
+  * Subtracts this new value of "sum" from 255 (2^8-1), and stores the result in a variable called "complement".
   * Outputs the value of "checksum" and "complement" to standard output (System.out).
   * If the value of "checksum" and "complement" are not the same, outputs the string "Error Detected!" to standard error (stderr).
 
@@ -46,22 +46,27 @@ class checksum
 
     final int max_int = 255;  // The maximum size for the input
     int count = 10;           // The number of integers to read from stdin
+    int value = 0;            // The value just read from stdin:  value = stdin.nextInt();
     int sum = 0;              // Note that the "sum" might exceed max_int
     int checksum = 0;         // The value of the 6th input integer
-    int quotient;             // The result of evaluating the assignment:  quotient   = sum / (max_int + 1);
-    int remainder;            // The result of evaluating the assignment:  remainder  = sum % (max_int + 1 );
+    int quotient;             // The result of evaluating the assignment: quotient   = sum / (max_int + 1);
+    int remainder;            // The result of evaluating the assignment: remainder  = sum % (max_int + 1 );
     int complement;           // The result of evaluating the assignment: complement = max_int - sum;
 
     Scanner stdin = new Scanner(System.in);
+    
+    value = stdin.nextInt();
 ```
 
 ```
-  System.out.printf("Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
-  if (checksum != complement ) {
-    System.err.printf("Error Detected!\n");  
-  }
-  
-}
+   System.out.printf("Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
+   if (checksum != complement ) {
+     System.err.printf("Error Detected!\n");  
+   }
+   return; 
+ }
+ 
+}  // End of Class: Checksum
 ```
 
 ### Testing:
@@ -111,22 +116,6 @@ $ exit                                       # Exit the script program
 ```
 
 
-### Submission:
-Use github classroom to accept and to submit your solution.
-
-Here are the steps you should follow:
-1. Make a directory for your labs:  mkdir -p ~/classes/comp122/deliverables
-1. Accept this assignment via GitHub Classroom
-   - A URL will be provided to you via slack
-1. Clone the assignment into the directory ~/classes/comp122/deliverables
-1. Develop your Java program
-   - periodically push your solution to the repository
-
-#### Files to be added to the repository
-You need to add the following files to the repository
-1. The checksum.java source code
-1. The checksum.script file
-
 #### Git Commands to remember
 1. git clone: to create a local repository (and working directory) of your remote repository
 2. git pull: a command to perform a *fetch* and *merge* in one step 
@@ -135,7 +124,8 @@ You need to add the following files to the repository
 4. git add: to add a file to the staging area 
 5. git commit: to place all stage files into the local repository
 6. git push: to copy all new information from the local repository into the remote repository
-7. git status: provides a recap of your current working directory, staging, and branch information
+7. git status: to obtain a recap of your current working directory, staging, and branch information
+8. git tag: to associate a name with your current "commit" location.
 
 
 
