@@ -10,7 +10,7 @@ digital data, against which later comparisons can be made to detect errors in th
 
 
 # Purpose:
-This program is being assigned to start you programming right away in COMP 122. The program is also being used as an assessment instrument for the professor.  Via your solutions, the professor will be able to adjust the content the introductory material of the class a bit to review or to reinforce various topics covered in COMP110 (which is a prerequiste for this class). 
+This program is being assigned to start you programming right away in COMP 122. The program is also being used as an assessment instrument for the professor.  Via your solutions, the professor will be able to adjust the content the introductory material of the class a bit to review or to reinforce various topics covered in COMP110 (which is a prerequisite for this class). 
 
 
 # Assignment:
@@ -70,21 +70,21 @@ class checksum
 ```
 
 ### Development Steps:
-    1. Accept and clone the assignment
-    2. Create an empty file called checksum.java, and then commit and tag
-       - ``git add checksum.java ; git commit -m 'beginning the project' ; git tag begin``
-    4. Incorporate the starter code, and then commit and tag.
-       - ``git add checksum.java ; git commit -m 'added starter code' ; git tag initialized``
-    5. Introduce a loop that calculates the sum of 10 integers, and then commit and tag.
-       - ``git add checksum.java ; git commit -m 'added loop' ; git tag sum``
-    6. Introduce a conditional to handle the sixth input value, and then commit and tag.
-       - ``git add checksum.java ; git commit -m 'handled the 6th element' ; git tag sixth``
-    7. Compute the values of quotient, remainder, and then commit and tag.
-       - ``git add checksum.java ; git commit -m 'quotient & remainder done' ; git tag quotient``
-    8. Recompute the value of sum, and then commit and tag.
-       - ``git add checksum.java ; git commit -m 'recomputed sume' ; git tag sum``
-    9. Compute the final value of complement, and then commit and tag.
-       - ``git add checksum.java ; git commit -m 'calculated complement' ; git tag complement``
+ 1. Accept and clone the assignment
+ 2. Create an empty file called checksum.java, and then commit and tag
+    - ``git add checksum.java ; git commit -m 'beginning the project' ; git tag begin``
+ 4. Incorporate the starter code, and then commit and tag.
+    - ``git add checksum.java ; git commit -m 'added starter code' ; git tag initialized``
+ 5. Introduce a loop that calculates the sum of 10 integers, and then commit and tag.
+    - ``git add checksum.java ; git commit -m 'added loop' ; git tag sum``
+ 6. Introduce a conditional to handle the sixth input value, and then commit and tag.
+    - ``git add checksum.java ; git commit -m 'handled the 6th element' ; git tag sixth``
+ 7. Compute the values of quotient, remainder, and then commit and tag.
+    - ``git add checksum.java ; git commit -m 'quotient & remainder done' ; git tag quotient``
+ 8. Recompute the value of sum, and then commit and tag.
+    - ``git add checksum.java ; git commit -m 'recomputed sum' ; git tag sum``
+ 9. Compute the final value of complement, and then commit and tag.
+    - ``git add checksum.java ; git commit -m 'calculated complement' ; git tag complement``
 
 
     
@@ -111,7 +111,7 @@ Stored Checksum: 81, Computed Checksum: 81
 #### Git Commands to remember
 1. ``git clone``: to create a local repository (and working directory) of your remote repository
 2. ``git pull``: a command to perform a *fetch* and *merge* in one step 
-   - ``git fetch``: to copy all new informtion from the remote repository into the local repository
+   - ``git fetch``: to copy all new information from the remote repository into the local repository
    - ``git merge``: to merge all new information from the local repository into the working directory
 4. ``git add``: to add a file to the staging area 
 5. ``git commit``: to place all stage files into the local repository
@@ -127,7 +127,7 @@ This program is based upon the structure if a IPv4 packet.  Although you do not 
 * https://en.wikipedia.org/wiki/IPv4_header_checksum
 
 ### Notes:
-* The IPv4 header utilizes a checksum field that is 16-bit quanity. This program reduces the size in half to a 8-bit quantity.  Correspondingly, the following changes are made to keep things consistent: 
+* The IPv4 header utilizes a checksum field that is 16-bit quantity. This program reduces the size in half to a 8-bit quantity.  Correspondingly, the following changes are made to keep things consistent: 
 * The IPv4 header, without any options, has a total size of 20 bytes. This program reduces the size in half to a 10 byte size.
 * This checksum value is stored in the 11th & 12th byte of the IPv4 header. This program assigns its location to the 6th byte.
 
