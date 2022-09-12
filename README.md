@@ -12,6 +12,10 @@ digital data, against which later comparisons can be made to detect errors in th
 # Purpose:
 This program is being assigned to start you programming right away in COMP 122. The program is also being used as an assessment instrument for the professor.  Via your solutions, the professor will be able to adjust the content the introductory material of the class a bit to review or to reinforce various topics covered in COMP110 (which is a prerequisite for this class). 
 
+This assignment is also an exercise in the development process using ``git``.  You must following the defined development process to *tag* various points in time.  
+   * ``git tag \<label\>``: used to tag the current commit point
+   * ``git tag -d \<label\>``: used to delete a tag
+   * ``git tag -f \<label\>``: used to move a tag to the current commit point
 
 # Assignment:
 1. Write a Java program that computes a simple checksum of 8-bit integers.  This program is *based* upon the calculation of the checksum value of a IPv4 header, defined by RFC791. 
