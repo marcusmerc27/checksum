@@ -72,19 +72,33 @@ class checksum
 ### Development Steps:
  1. Accept and clone the assignment
  2. Create an empty file called checksum.java, and then commit and tag
-    - ``git add checksum.java ; git commit -m 'beginning the project' ; git tag begin``
+    - ``git add checksum.java``
+    - ``git commit -m 'beginning the project'`` 
+    - ``git tag begin``
  4. Incorporate the starter code, and then commit and tag.
-    - ``git add checksum.java ; git commit -m 'added starter code' ; git tag initialized``
+    - ``git add checksum.java`` 
+    - ``git commit -m 'added starter code'``
+    - ``git tag initialized``
  5. Introduce a loop that calculates the sum of 10 integers, and then commit and tag.
-    - ``git add checksum.java ; git commit -m 'added loop' ; git tag sum``
+    - ``git add checksum.java``
+    - ``git commit -m 'added loop'``
+    - ``git tag sum``
  6. Introduce a conditional to handle the sixth input value, and then commit and tag.
-    - ``git add checksum.java ; git commit -m 'handled the 6th element' ; git tag sixth``
+    - ``git add checksum.java``
+    - ``git commit -m 'handled the 6th element'``
+    - ``git tag sixth``
  7. Compute the values of quotient, remainder, and then commit and tag.
-    - ``git add checksum.java ; git commit -m 'quotient & remainder done' ; git tag quotient``
+    - ``git add checksum.java``
+    - ``git commit -m 'quotient & remainder done'``
+    - ``git tag quotient``
  8. Recompute the value of sum, and then commit and tag.
-    - ``git add checksum.java ; git commit -m 'recomputed sum' ; git tag sum``
+    - ``git add checksum.java``
+    - ``git commit -m 'recomputed sum'`` 
+    - ``git tag sum``
  9. Compute the final value of complement, and then commit and tag.
-    - ``git add checksum.java ; git commit -m 'calculated complement' ; git tag complement``
+    - ``git add checksum.java``
+    - ``git commit -m 'calculated complement'``
+    - ``git tag complement``
 
 
     
