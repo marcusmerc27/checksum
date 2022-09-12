@@ -8,7 +8,7 @@ compile: checksum.java
 
 execute: compile
 	java checksum < 156.txt
-	java checksum < 229.txt
+	java checksum < 229_error.txt
 	java checksum < 81.txt
 
 review: execute
