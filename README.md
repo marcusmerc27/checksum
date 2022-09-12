@@ -22,8 +22,8 @@ This program should conform to the following specification:
 
   * Program name: checksum.java
   * Reads 10 non-negative integers from standard input (stdin), with each integer value in the range of 0..2^8-1 (I.e., 0..255). 
-  * Stores the 6th input integer into a variable called "checksum", and resets this input value to zero (0).
   * Stores the sum of the integers read from stdin into a variable called "sum".
+  * Stores the 6th input integer into a variable called "checksum", and resets this input value to zero (0).
   * Performs integer division on this sum using 256 (2^8) as the divisor to yield both a quotient and a remainder. These values are then stored in the variables "quotient" and "remainder", respectively.
   * Adds the values of "quotient" and "remainder" together, and stores this value into the variable "sum".
   * Subtracts this new value of "sum" from 255 (2^8-1), and stores the result in a variable called "complement".
@@ -69,8 +69,27 @@ class checksum
 }  // End of Class: Checksum
 ```
 
+### Development Steps:
+    1. Accept and clone the assignment
+    2. Create an empty file called checksum.java, and then commit and tag
+       - ``git add checksum.java ; git commit -m 'beginning the project' ; git tag begin``
+    4. Incorporate the starter code, and then commit and tag.
+       - ``git add checksum.java ; git commit -m 'added starter code' ; git tag initialized``
+    5. Introduce a loop that calculates the sum of 10 integers, and then commit and tag.
+       - ``git add checksum.java ; git commit -m 'added loop' ; git tag sum``
+    6. Introduce a conditional to handle the sixth input value, and then commit and tag.
+       - ``git add checksum.java ; git commit -m 'handled the 6th element' ; git tag sixth``
+    7. Compute the values of quotient, remainder, and then commit and tag.
+       - ``git add checksum.java ; git commit -m 'quotient & remainder done' ; git tag quotient``
+    8. Recompute the value of sum, and then commit and tag.
+       - ``git add checksum.java ; git commit -m 'recomputed sume' ; git tag sum``
+    9. Compute the final value of complement, and then commit and tag.
+       - ``git add checksum.java ; git commit -m 'calculated complement' ; git tag complement``
+
+
+    
 ### Testing:
-Use the following to test your program.
+Use the following to test your program via the command line
 
 ```
 $ java checksum < 156.txt
@@ -78,7 +97,7 @@ Stored Checksum: 156, Computed Checksum: 156
 ```
 
 ```
-$ java checksum < 229.txt
+$ java checksum < 229_error.txt
 Stored Checksum: 229, Computed Checksum: 132
 Error Detected!
 ```
@@ -88,44 +107,17 @@ $ java checksum < 81.txt
 Stored Checksum: 81, Computed Checksum: 81
 ```
 
-The file "47201.txt" is a correct test case for the enhanced program using 16-bit integers.
-
-### Timing the Program:
-Once you have your program working, you need to time the execution of the program. Moreover, you should compare your time to the execution time of two other programs written by the professor.  The first program was written in Java, and the second in C.  You should expect to see that the Java programs run much slower that the corresponding C program.
-
-For this part of the assignment, you need to ensure your program works correctly on the ssh.sandbox.csun.edu server.  Thsi is the server in which the executing times will be perform.
-
-```
-$ scp checksum.java ssh.sandbox.csun.edu:    # Secure copy your program to the ssh.sandbox.csun.edu server.
-$ scp 156.txt ssh.sandbox.csun.edu:          # Secure copy the 156 test case to the ssh.sandbox.csun.edu server.
-$ ssh ssh.sandbox.csun.edu                   # Log into the ssh.sandbox.csun.edu server
-$ javac checksum.java                        # Compile your checksum program
-```
-
-Now that you have a working program on the server, let's time and compare execution times.  Here we use the 'script' program to record this activity. The file 'timing
-
-```
-$ script checksum.typescript                 # Start and record a session, with the session recorded in the checksum.typescript file
-$ java checksum < 156.txt                    # Run your checksum program to make sure things are working
-$ pushd ~steve/comp122/checksum              # Temporarily change the working directory to utilize his version
-$ time java checksum < 156.txt               # Time the execution of the professor's Java version
-$ time ./checksum < 156.txt                  # Time the execution of the professor's C version
-$ popd                                       # Change the working directory back
-$ time java checksum < 156.txt               # Time the execution of your Java version
-$ exit                                       # Exit the script program
-```
-
 
 #### Git Commands to remember
-1. git clone: to create a local repository (and working directory) of your remote repository
-2. git pull: a command to perform a *fetch* and *merge* in one step 
-   - git fetch: to copy all new informtion from the remote repository into the local repository
-   - git merge: to merge all new information from the local repository into the working directory
-4. git add: to add a file to the staging area 
-5. git commit: to place all stage files into the local repository
-6. git push: to copy all new information from the local repository into the remote repository
-7. git status: to obtain a recap of your current working directory, staging, and branch information
-8. git tag: to associate a name with your current "commit" location.
+1. ``git clone``: to create a local repository (and working directory) of your remote repository
+2. ``git pull``: a command to perform a *fetch* and *merge* in one step 
+   - ``git fetch``: to copy all new informtion from the remote repository into the local repository
+   - ``git merge``: to merge all new information from the local repository into the working directory
+4. ``git add``: to add a file to the staging area 
+5. ``git commit``: to place all stage files into the local repository
+6. ``git push``: to copy all new information from the local repository into the remote repository
+7. ``git status``: to obtain a recap of your current working directory, staging, and branch information
+8. ``git tag``: to associate a name with your current "commit" location.
 
 
 
