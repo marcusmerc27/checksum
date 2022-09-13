@@ -17,6 +17,9 @@ This assignment is also an exercise in the development process using ``git``.  Y
    * ``git tag -d \<label\>``: used to delete a tag
    * ``git tag -f \<label\>``: used to move a tag to the current commit point
 
+ git push origin --tags
+
+ 
 # Assignment:
 1. Write a Java program that computes a simple checksum of 8-bit integers.  This program is *based* upon the calculation of the checksum value of a IPv4 header, defined by RFC791. 
 
