@@ -13,14 +13,14 @@ digital data, against which later comparisons can be made to detect errors in th
 This program is being assigned to start you programming right away in COMP 122. The program is also being used as an assessment instrument for the professor.  Via your solutions, the professor will be able to adjust the content the introductory material of the class a bit to review or to reinforce various topics covered in COMP110 (which is a prerequisite for this class). 
 
 This assignment is also an exercise in the development process using ``git``.  You must following the defined development process to *tag* various points in time.  
-   * ``git tag \<label\>``: used to tag the current commit point
-   * ``git tag -d \<label\>``: used to delete a tag
-   * ``git tag -f \<label\>``: used to move a tag to the current commit point
+   * ``git tag <label>``: used to tag the current commit point
+   * ``git tag -d <label>``: used to delete a tag
+   * ``git tag -f <label>``: used to move a tag to the current commit point
 
 # Assignment:
-1. Write a Java program that computes a simple checksum of 8-bit integers.  This program is *based* upon the calculation of the checksum value of a IPv4 header, defined by RFC791. 
+Write a Java program that computes a simple checksum of 8-bit integers.  This program is *based* upon the calculation of the checksum value of a IPv4 header, defined by RFC791. 
 
-1. Time the execution of your program, as well as two other programs provided by the professor.
+You may use any editor or IDE (for example eclispe) to develop the program.  You must, however, test your program via the commandline.  To do this final testing step, you might have to install a current version of java onto your computer.  (https://www.java.com/en/download/)
 
 This program should conform to the following specification:
 
@@ -37,6 +37,7 @@ This program should conform to the following specification:
 
 ### Minimum Validation Checks:
 * Ensure that all input values are the correct range.  You may abort the program otherwise.
+
 
 ### Starter Code:
 
@@ -103,11 +104,13 @@ class checksum
     - ``git add checksum.java``
     - ``git commit -m 'calculated complement'``
     - ``git tag complement``
+ 10. Perform a final push with tags included
+    - ``git push --tags``
 
 
     
 ### Testing:
-Use the following to test your program via the command line
+Via the command line, test your program with the provided test cases.
 
 ```
 $ java checksum < 156.txt
