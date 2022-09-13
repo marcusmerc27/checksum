@@ -110,6 +110,9 @@ class checksum
  10. Perform a final push with tags included
     - ``git push --tags``
 
+Note that you must perform at least one ``push`` to your repo before the due date to have your submission graded.
+That it so say, you will get an automatic zero for this assignment if you do not make at least one push by the due date.
+
 
     
 ### Testing:
