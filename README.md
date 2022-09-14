@@ -90,7 +90,7 @@ class checksum
  5. Introduce a loop that calculates the sum of 10 integers, and then commit and tag.
     - ``git add checksum.java``
     - ``git commit -m 'added loop'``
-    - ``git tag sum``
+    - ``git tag loop``
  6. Introduce a conditional to handle the sixth input value, and then commit and tag.
     - ``git add checksum.java``
     - ``git commit -m 'handled the 6th element'``
